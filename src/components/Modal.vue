@@ -1,8 +1,12 @@
 <template>
   <div id="modal">
-    <h2>{{title}}</h2>
-    <button @click="$emit('close')">Close</button>
-    <component :is="content" />
+    <div id="container">
+      <nav id="nav">
+        <h2>{{title}}</h2>
+        <span @click="$emit('close')">╳</span>
+      </nav>
+      <component :is="content" />
+    </div>
   </div>
 </template>
 
@@ -26,5 +30,13 @@ export default {
   background-color: white;
   box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.3);;
   z-index: 4;
+}
+#container {
+  margin: 1em;
+}
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 </style>
