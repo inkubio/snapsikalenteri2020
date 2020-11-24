@@ -7,6 +7,7 @@
 </template>
 
 <script>
+
 export default {
   name: "Background.vue",
   data () {
@@ -21,6 +22,7 @@ export default {
     openDoor(event) {
       this.$set(this.doors, event.target.id, true)
       console.log(event.target.id)
+      this.$emit('openDoor', event.target.id)
     }
   }
 }
@@ -54,16 +56,15 @@ export default {
   z-index: 1;
 }
 #door1 {
-  transition: visibility 0.5s, opacity 0.5s ease-in;
+  transition: opacity 0.5s ease-in;
   clip-path: inset(48% 72% 33% 16%);
 }
 #door2 {
-  transition: visibility 0.5s, opacity 0.5s ease-in;
+  transition: opacity 0.5s ease-in;
   clip-path: inset(31% 47% 49% 41%);
 }
 
 .hide {
-  visibility: hidden;
   opacity: 0;
 }
 </style>
