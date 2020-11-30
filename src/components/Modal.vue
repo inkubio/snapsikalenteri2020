@@ -19,8 +19,20 @@ export default {
     title: String,
     content: Object,
     styleObject: Object
+  },
+  mounted() {
+    document.addEventListener('keydown', this.closeModal)
+  },
+  beforeDestroy() {
+    document.removeEventListener('keydown', this.closeModal)
+  },
+  methods: {
+    closeModal(event) {
+      if (event.key === 'Escape') {
+        this.$emit('close')
+      }
+    }
   }
-
 }
 </script>
 
