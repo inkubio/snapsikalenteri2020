@@ -53,7 +53,7 @@ export default {
       this.currentTitle = this.doors[id].title;
       this.currentContent = this.doors[id].content;
       await new Promise(r => setTimeout(r, 1000));
-      this.showModal = true
+      //this.showModal = true
     },
     closeModal() {
       this.showModal = false
@@ -98,7 +98,7 @@ export default {
   opacity: 0;
 }
 .loading-enter-active {
-  transition: opacity 1.5s;
+  transition: opacity 0.1s;
 }
 .loading-enter {
   opacity: 0;
