@@ -24,6 +24,7 @@ import Modal from "@/components/Modal";
 import Credits from "@/components/Credits";
 import Door1 from "@/components/Doors/Door1";
 import Door2 from "@/components/Doors/Door2";
+import Intro from "@/components/Intro";
 
 export default {
   name: 'App',
@@ -51,12 +52,22 @@ export default {
       credits: {
         title: "Tekijät",
         content: Credits
+      },
+      intro: {
+        title: null,
+        content: Intro,
+        modalClass: {
+
+        }
       }
     }
   },
+  mounted() {
+    this.showIntro()
+  },
   computed: {
     modalClass: function () {
-      if (!( window.innerWidth <= 800 )) {
+      if ( window.innerWidth >= 800 ) {
         return {
           top: '20%',
           bottom: '20%',
@@ -65,9 +76,28 @@ export default {
         }
       }
       return null
+    },
+    introClass: function () {
+      if ( window.innerWidth >= 800 ) {
+        return {
+          top: '40%',
+          bottom: '40%',
+          left: '30%',
+          right: '30%'
+        }
+      }
+      return {
+        top: '32%',
+        bottom: '32%',
+        left: '5%',
+        right: '5%'
+      }
     }
   },
   methods: {
+    calendarLoaded() {
+      this.isLoaded = true
+    },
     async openModal(id) {
       this.currentTitle = this.doors[id].title;
       this.currentContent = this.doors[id].content;
@@ -84,8 +114,12 @@ export default {
       this.currentModalclass = this.modalClass
       this.showModal = true
     },
-    calendarLoaded() {
-      this.isLoaded = true
+    showIntro() {
+      this.currentTitle = this.intro.title
+      this.currentContent = this.intro.content
+      this.currentModalclass = this.introClass
+
+      this.showModal = true
     }
   }
 }
