@@ -65,10 +65,15 @@ export default {
       imagesLoaded: 0
     }
   },
+  mounted() {
+    if (localStorage.doors) {
+      this.doors = JSON.parse(localStorage.doors)
+    }
+  },
   methods: {
     openDoor(event) {
       this.$set(this.doors, event.target.id, true)
-      console.log(event.target.id)
+      localStorage.setItem('doors', JSON.stringify(this.doors))
       this.$emit('openDoor', event.target.id)
     },
     onLoad() {
@@ -82,9 +87,6 @@ export default {
       this.$emit('credits')
     }
   },
-  watch: {
-
-  }
 }
 </script>
 

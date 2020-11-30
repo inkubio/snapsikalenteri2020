@@ -25,6 +25,28 @@ import Credits from "@/components/Credits";
 import Door1 from "@/components/Doors/Door1";
 import Door2 from "@/components/Doors/Door2";
 import Intro from "@/components/Intro";
+import Door3 from "@/components/Doors/Door3";
+import Door4 from "@/components/Doors/Door4";
+import Door5 from "@/components/Doors/Door5";
+import Door6 from "@/components/Doors/Door6";
+import Door7 from "@/components/Doors/Door7";
+import Door8 from "@/components/Doors/Door8";
+import Door9 from "@/components/Doors/Door9";
+import Door10 from "@/components/Doors/Door10";
+import Door11 from "@/components/Doors/Door11";
+import Door12 from "@/components/Doors/Door12";
+import Door13 from "@/components/Doors/Door13";
+import Door14 from "@/components/Doors/Door14";
+import Door15 from "@/components/Doors/Door15";
+import Door16 from "@/components/Doors/Door16";
+import Door17 from "@/components/Doors/Door17";
+import Door18 from "@/components/Doors/Door18";
+import Door19 from "@/components/Doors/Door19";
+import Door20 from "@/components/Doors/Door20";
+import Door21 from "@/components/Doors/Door21";
+import Door22 from "@/components/Doors/Door22";
+import Door23 from "@/components/Doors/Door23";
+import Door24 from "@/components/Doors/Door24";
 
 export default {
   name: 'App',
@@ -47,7 +69,95 @@ export default {
         door2: {
           title: "Luukku 2",
           content: Door2
-        }
+        },
+        door3: {
+          title: "Luukku 3",
+          content: Door3
+        },
+        door4: {
+          title: "Luukku 4",
+          content: Door4
+        },
+        door5: {
+          title: "Luukku 5",
+          content: Door5
+        },
+        door6: {
+          title: "Luukku 6",
+          content: Door6
+        },
+        door7: {
+          title: "Luukku 7",
+          content: Door7
+        },
+        door8: {
+          title: "Luukku 8",
+          content: Door8
+        },
+        door9: {
+          title: "Luukku 9",
+          content: Door9
+        },
+        door10: {
+          title: "Luukku 10",
+          content: Door10
+        },
+        door11: {
+          title: "Luukku 11",
+          content: Door11
+        },
+        door12: {
+          title: "Luukku 12",
+          content: Door12
+        },
+        door13: {
+          title: "Luukku 13",
+          content: Door13
+        },
+        door14: {
+          title: "Luukku 14",
+          content: Door14
+        },
+        door15: {
+          title: "Luukku 15",
+          content: Door15
+        },
+        door16: {
+          title: "Luukku 16",
+          content: Door16
+        },
+        door17: {
+          title: "Luukku 17",
+          content: Door17
+        },
+        door18: {
+          title: "Luukku 18",
+          content: Door18
+        },
+        door19: {
+          title: "Luukku 19",
+          content: Door19
+        },
+        door20: {
+          title: "Luukku 20",
+          content: Door20
+        },
+        door21: {
+          title: "Luukku 21",
+          content: Door21
+        },
+        door22: {
+          title: "Luukku 22",
+          content: Door22
+        },
+        door23: {
+          title: "Luukku 23",
+          content: Door23
+        },
+        door24: {
+          title: "Luukku 24",
+          content: Door24
+        },
       },
       credits: {
         title: "Tekijät",
@@ -63,7 +173,10 @@ export default {
     }
   },
   mounted() {
-    this.showIntro()
+    if (!localStorage.notFirst) {
+      this.showIntro()
+      localStorage.setItem('notFirst', "true")
+    }
   },
   computed: {
     modalClass: function () {
@@ -118,7 +231,6 @@ export default {
       this.currentTitle = this.intro.title
       this.currentContent = this.intro.content
       this.currentModalclass = this.introClass
-
       this.showModal = true
     }
   }
