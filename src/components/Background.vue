@@ -1,8 +1,8 @@
 <template>
   <div id="container">
-    <img id="door1" class="door" v-bind:class="{hide: doors.door1}" src="@/assets/advent-calendar.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img id="door2" class="door" v-bind:class="{hide: doors.door2}" src="@/assets/advent-calendar.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img id="background" src="@/assets/background1.jpg" alt="Kiltis" >
+    <img @load="onLoad" id="door1" class="door" v-bind:class="{hide: doors.door1}" src="@/assets/calendar_foreground.png" alt="Kiltis" @click="openDoor($event)">
+    <img @load="onLoad" id="door2" class="door" v-bind:class="{hide: doors.door2}" src="@/assets/calendar_foreground.png" alt="Kiltis" @click="openDoor($event)">
+    <img @load="onLoad" id="background" src="@/assets/calendar_background.png" alt="Kiltis" >
   </div>
 </template>
 
@@ -16,6 +16,7 @@ export default {
         door1: false,
         door2: false,
       },
+      imagesLoaded: 0
     }
   },
   methods: {
@@ -23,7 +24,16 @@ export default {
       this.$set(this.doors, event.target.id, true)
       console.log(event.target.id)
       this.$emit('openDoor', event.target.id)
+    },
+    onLoad() {
+      this.imagesLoaded++;
+      if (this.imagesLoaded === 3) {
+        this.$emit("loaded")
+      }
     }
+  },
+  watch: {
+
   }
 }
 </script>
@@ -57,11 +67,14 @@ export default {
 }
 #door1 {
   transition: opacity 0.5s ease-in;
-  clip-path: inset(48% 72% 33% 16%);
+  clip-path: polygon(76% 6%, 22% 6%, 19% 23%, 22% 24%, 24% 22%, 66% 24%, 68% 28%, 71% 29%);
+
+
 }
 #door2 {
   transition: opacity 0.5s ease-in;
-  clip-path: inset(31% 47% 49% 41%);
+  clip-path: polygon(62% 27%, 70% 27%, 70% 44%, 62% 44%);
+
 }
 
 .hide {
