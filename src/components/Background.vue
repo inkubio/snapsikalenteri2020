@@ -1,31 +1,31 @@
 <template>
   <div id="container">
-    <img @load="onLoad" id="door1" class="door" v-bind:class="{hide: doors.door1}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door2" class="door" v-bind:class="{hide: doors.door2}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door3" class="door" v-bind:class="{hide: doors.door3}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door4" class="door" v-bind:class="{hide: doors.door4}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door5" class="door" v-bind:class="{hide: doors.door5}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door6" class="door" v-bind:class="{hide: doors.door6}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door7" class="door" v-bind:class="{hide: doors.door7}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door8" class="door" v-bind:class="{hide: doors.door8}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door9" class="door" v-bind:class="{hide: doors.door9}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door10" class="door" v-bind:class="{hide: doors.door10}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door11" class="door" v-bind:class="{hide: doors.door11}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door12" class="door" v-bind:class="{hide: doors.door12}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door13" class="door" v-bind:class="{hide: doors.door13}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door14" class="door" v-bind:class="{hide: doors.door14}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door15" class="door" v-bind:class="{hide: doors.door15}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door16" class="door" v-bind:class="{hide: doors.door16}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door17" class="door" v-bind:class="{hide: doors.door17}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door18" class="door" v-bind:class="{hide: doors.door18}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door19" class="door" v-bind:class="{hide: doors.door19}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door20" class="door" v-bind:class="{hide: doors.door20}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door21" class="door" v-bind:class="{hide: doors.door21}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door22" class="door" v-bind:class="{hide: doors.door22}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door23" class="door" v-bind:class="{hide: doors.door23}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
-    <img @load="onLoad" id="door24" class="door" v-bind:class="{hide: doors.door24}" src="@/assets/calendar_foreground.jpg" alt="Kiltis" @click="openDoor($event)">
+    <img @load="onLoad" id="door1" class="door" v-bind:class="{hide: doors.door1}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door2" class="door" v-bind:class="{hide: doors.door2}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door3" class="door" v-bind:class="{hide: doors.door3}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door4" class="door" v-bind:class="{hide: doors.door4}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door5" class="door" v-bind:class="{hide: doors.door5}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door6" class="door" v-bind:class="{hide: doors.door6}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door7" class="door" v-bind:class="{hide: doors.door7}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door8" class="door" v-bind:class="{hide: doors.door8}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door9" class="door" v-bind:class="{hide: doors.door9}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door10" class="door" v-bind:class="{hide: doors.door10}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door11" class="door" v-bind:class="{hide: doors.door11}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door12" class="door" v-bind:class="{hide: doors.door12}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door13" class="door" v-bind:class="{hide: doors.door13}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door14" class="door" v-bind:class="{hide: doors.door14}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door15" class="door" v-bind:class="{hide: doors.door15}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door16" class="door" v-bind:class="{hide: doors.door16}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door17" class="door" v-bind:class="{hide: doors.door17}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door18" class="door" v-bind:class="{hide: doors.door18}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door19" class="door" v-bind:class="{hide: doors.door19}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door20" class="door" v-bind:class="{hide: doors.door20}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door21" class="door" v-bind:class="{hide: doors.door21}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door22" class="door" v-bind:class="{hide: doors.door22}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door23" class="door" v-bind:class="{hide: doors.door23}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
+    <img @load="onLoad" id="door24" class="door" v-bind:class="{hide: doors.door24}" src="@/assets/calendar_foreground.jpg" alt="Luukku" @click="openDoor($event)">
 
-
+    <img @load="onLoad" id="credits" src="@/assets/calendar_background.jpg" alt="Tekijät" @click="credits">
     <img @load="onLoad" id="background" src="@/assets/calendar_background.jpg" alt="Kiltis" >
   </div>
 </template>
@@ -73,9 +73,13 @@ export default {
     },
     onLoad() {
       this.imagesLoaded++;
-      if (this.imagesLoaded >= 25) {
+      if (this.imagesLoaded >= 26) {
         this.$emit("loaded")
       }
+    },
+    credits() {
+      console.log("credits")
+      this.$emit('credits')
     }
   },
   watch: {
@@ -185,7 +189,16 @@ export default {
 #door24 {
   clip-path: polygon(55% 54%, 55% 63%, 51% 66%, 49% 64%, 46% 66%, 43% 61%, 48% 56%);
 }
-
+#credits {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: auto;
+  z-index: 1;
+  clip-path: polygon(83% 6%, 89% 1%, 89% 12%, 83% 17%);
+  z-index: 1;
+}
 .hide {
   opacity: 0;
 }

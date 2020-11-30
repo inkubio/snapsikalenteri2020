@@ -4,13 +4,14 @@
       Loading...
     </div>
     <transition name="loading">
-      <Background v-show="isLoaded" @loaded="calendarLoaded" @openDoor="openModal"/>
+      <Background v-show="isLoaded" @loaded="calendarLoaded" @openDoor="openModal" @credits="creditsModal"/>
     </transition>
     <transition name="fade" mode="out-in">
       <Modal v-if="showModal"
              @close="closeModal"
              :title="this.currentTitle"
              :content="this.currentContent"
+             :style-object="this.currentModalclass"
       />
     </transition>
   </div>
@@ -20,6 +21,7 @@
 
 import Background from '@/components/Background.vue'
 import Modal from "@/components/Modal";
+import Credits from "@/components/Credits";
 import Door1 from "@/components/Doors/Door1";
 import Door2 from "@/components/Doors/Door2";
 
@@ -34,6 +36,7 @@ export default {
       showModal: false,
       currentTitle: 'Testi',
       currentContent: null,
+      currentModalclass: null,
       isLoaded: false,
       doors: {
         door1: {
@@ -44,19 +47,42 @@ export default {
           title: "Luukku 2",
           content: Door2
         }
+      },
+      credits: {
+        title: "Tekijät",
+        content: Credits
       }
+    }
+  },
+  computed: {
+    modalClass: function () {
+      if (!( window.innerWidth <= 800 )) {
+        return {
+          top: '20%',
+          bottom: '20%',
+          left: '20%',
+          right: '20%'
+        }
+      }
+      return null
     }
   },
   methods: {
     async openModal(id) {
-      console.log("Works", id)
       this.currentTitle = this.doors[id].title;
       this.currentContent = this.doors[id].content;
-      await new Promise(r => setTimeout(r, 1000));
-      //this.showModal = true
+      this.currentModalclass = null
+      //await new Promise(r => setTimeout(r, 1000));
+      this.showModal = true
     },
     closeModal() {
       this.showModal = false
+    },
+    creditsModal() {
+      this.currentTitle = this.credits.title
+      this.currentContent = this.credits.content
+      this.currentModalclass = this.modalClass
+      this.showModal = true
     },
     calendarLoaded() {
       this.isLoaded = true
