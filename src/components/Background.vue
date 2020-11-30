@@ -72,9 +72,18 @@ export default {
   },
   methods: {
     openDoor(event) {
-      this.$set(this.doors, event.target.id, true)
-      localStorage.setItem('doors', JSON.stringify(this.doors))
-      this.$emit('openDoor', event.target.id)
+      let d = event.target.id.slice(4)
+      let current_date = new Date(Date.now())
+      if (process.env.VUE_APP_DEBUG === "true" || (current_date.getDate() == d && current_date.getMonth() + 1 === 12) ||
+          current_date.getFullYear() > 2020) {
+        this.$set(this.doors, event.target.id, true)
+        localStorage.setItem('doors', JSON.stringify(this.doors))
+        this.$emit('openDoor', event.target.id)
+      } else {
+        if (d == 24) {
+          window.open("https://www.youtube.com/watch?v=E8gmARGvPlI")
+        }
+      }
     },
     onLoad() {
       this.imagesLoaded++;
