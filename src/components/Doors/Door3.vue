@@ -1,5 +1,5 @@
 <template>
-  <p>Luukku 3</p>
+  <iframe src="https://emil.fi/p/inku18luukku/"/>
 </template>
 
 <script>
@@ -9,5 +9,8 @@ export default {
 </script>
 
 <style scoped>
-
+iframe {
+  width: 95%;
+  height: 97%;
+}
 </style>
