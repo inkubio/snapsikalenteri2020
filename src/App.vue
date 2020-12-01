@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div v-if="!isLoaded" id="loading">
-      Loading...
+      Lataa...
     </div>
     <transition name="loading">
       <Background v-show="isLoaded" @loaded="calendarLoaded" @openDoor="openModal" @credits="creditsModal"/>

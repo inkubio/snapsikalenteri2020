@@ -108,12 +108,15 @@ export default {
   overflow-y: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
+
 }
 #container::-webkit-scrollbar { display: none; }
 #background {
   position: absolute;
   left: 0;
   top: 0;
+  right: 0;
+  margin: auto;
   height: 100vh;
   width: auto;
   z-index: 0;
@@ -123,6 +126,8 @@ export default {
   position: absolute;
   left: 0;
   top: 0;
+  right: 0;
+  margin: auto;
   height: 100vh;
   width: auto;
   z-index: 1;
@@ -208,7 +213,6 @@ export default {
   width: auto;
   z-index: 1;
   clip-path: polygon(83% 6%, 89% 1%, 89% 12%, 83% 17%);
-  z-index: 1;
 }
 .hide {
   opacity: 0;
