@@ -1,6 +1,6 @@
 <template>
   <div id="modal" class="modal" :style="styleObject">
-    <div id="container">
+    <div id="modal-container">
       <header id="nav">
         <h2>{{title}}</h2>
         <span @click="$emit('close')">╳</span>
@@ -51,7 +51,7 @@ export default {
   max-width: 90%;
   max-height: 90%;
 }
-#container {
+#modal-container {
   padding: 1em;
   height: calc(100% - 2em);
 }
