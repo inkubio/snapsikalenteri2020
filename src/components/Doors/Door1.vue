@@ -5,11 +5,11 @@
     </p>
     <div class="divider"/>
     <div id="expVsReality">
-      <img id="expectations" src="@/assets/pictures/door1/1-fuksi_expectations.jpg" alt="Expectations">
-      <img id="reality" src="@/assets/pictures/door1/2-fuksi_reality.jpg" alt="Expectations">
+      <img id="expectations" src="@/assets/data/door1/1-fuksi_expectations.jpg" alt="Expectations">
+      <img id="reality" src="@/assets/data/door1/2-fuksi_reality.jpg" alt="Expectations">
     </div>
     <div class="divider"/>
-    <img id="joulusitsit" src="@/assets/pictures/door1/3.jpg" alt="Expectations">
+    <img id="joulusitsit" src="@/assets/data/door1/3.jpg" alt="Expectations">
   </div>
 </template>
 
