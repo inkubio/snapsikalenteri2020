@@ -27,6 +27,7 @@
 
     <img @load="onLoad" id="credits" src="@/assets/calendar_background.jpg" alt="Tekijät" @click="credits">
     <img @load="onLoad" id="background" src="@/assets/calendar_background.jpg" alt="Kiltis" >
+    <button id="reset" @click="reset">Resetoi luukut</button>
   </div>
 </template>
 
@@ -81,7 +82,6 @@ export default {
         if (!a) {
           await new Promise(r => setTimeout(r, 1500));
         }
-        localStorage.setItem('doors', JSON.stringify(this.doors))
         this.$emit('openDoor', event.target.id)
       } else {
         if (d == 24) {
@@ -96,10 +96,22 @@ export default {
       }
     },
     credits() {
-      console.log("credits")
       this.$emit('credits')
+    },
+    reset() {
+      console.log("TEST")
+      let newDoors = {}
+      for (const key in this.doors.keys) {
+        newDoors[key] = false
+      }
+      this.doors = newDoors
     }
   },
+  watch: {
+    doors: function (newDoors) {
+      localStorage.setItem('doors', JSON.stringify(newDoors))
+    }
+  }
 }
 </script>
 
@@ -115,6 +127,21 @@ export default {
 
 }
 #container::-webkit-scrollbar { display: none; }
+#reset {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 130px;
+  height: 30px;
+  z-index: 3;
+  background: none;
+  color: inherit;
+  font: inherit;
+  outline: inherit;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0;
+}
 #background {
   position: absolute;
   left: 0;
