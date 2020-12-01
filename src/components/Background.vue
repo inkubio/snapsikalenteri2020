@@ -71,12 +71,16 @@ export default {
     }
   },
   methods: {
-    openDoor(event) {
+    async openDoor(event) {
       let d = event.target.id.slice(4)
       let current_date = new Date(Date.now())
       if (process.env.VUE_APP_DEBUG === "true" || (current_date.getDate() == d && current_date.getMonth() + 1 === 12) ||
           current_date.getFullYear() > 2020) {
+        let a = this.doors[event.target.id];
         this.$set(this.doors, event.target.id, true)
+        if (!a) {
+          await new Promise(r => setTimeout(r, 1500));
+        }
         localStorage.setItem('doors', JSON.stringify(this.doors))
         this.$emit('openDoor', event.target.id)
       } else {

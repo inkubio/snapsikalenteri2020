@@ -240,7 +240,7 @@ export default {
         this.currentTitle = this.doors[id].title;
         this.currentContent = this.doors[id].content;
         this.currentModalclass = null
-        await new Promise(r => setTimeout(r, 2000));
+        //await new Promise(r => setTimeout(r, 200));
         this.showModal = true
       }
     },
