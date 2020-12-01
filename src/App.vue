@@ -64,99 +64,123 @@ export default {
       doors: {
         door1: {
           title: "Luukku 1",
-          content: Door1
+          content: Door1,
+          openModal: true
         },
         door2: {
           title: "Luukku 2",
-          content: Door2
+          content: Door2,
+          openModal: true
         },
         door3: {
           title: "Luukku 3",
-          content: Door3
+          content: Door3,
+          openModal: true
         },
         door4: {
           title: "Luukku 4",
-          content: Door4
+          content: Door4,
+          openModal: true
         },
         door5: {
           title: "Luukku 5",
-          content: Door5
+          content: Door5,
+          openModal: true
         },
         door6: {
           title: "Luukku 6",
-          content: Door6
+          content: Door6,
+          openModal: false
         },
         door7: {
           title: "Luukku 7",
-          content: Door7
+          content: Door7,
+          openModal: true
         },
         door8: {
           title: "Luukku 8",
-          content: Door8
+          content: Door8,
+          openModal: true
         },
         door9: {
           title: "Luukku 9",
-          content: Door9
+          content: Door9,
+          openModal: true
         },
         door10: {
           title: "Luukku 10",
-          content: Door10
+          content: Door10,
+          openModal: true
         },
         door11: {
           title: "Luukku 11",
-          content: Door11
+          content: Door11,
+          openModal: true
         },
         door12: {
           title: "Luukku 12",
-          content: Door12
+          content: Door12,
+          openModal: true
         },
         door13: {
           title: "Luukku 13",
-          content: Door13
+          content: Door13,
+          openModal: false
         },
         door14: {
           title: "Luukku 14",
-          content: Door14
+          content: Door14,
+          openModal: true
         },
         door15: {
           title: "Luukku 15",
-          content: Door15
+          content: Door15,
+          openModal: true
         },
         door16: {
           title: "Luukku 16",
-          content: Door16
+          content: Door16,
+          openModal: true
         },
         door17: {
           title: "Luukku 17",
-          content: Door17
+          content: Door17,
+          openModal: true
         },
         door18: {
           title: "Luukku 18",
-          content: Door18
+          content: Door18,
+          openModal: true
         },
         door19: {
           title: "Luukku 19",
-          content: Door19
+          content: Door19,
+          openModal: true
         },
         door20: {
           title: "Luukku 20",
-          content: Door20
+          content: Door20,
+          openModal: false
         },
         door21: {
           title: "Luukku 21",
-          content: Door21
+          content: Door21,
+          openModal: true
         },
         door22: {
           title: "Luukku 22",
-          content: Door22
+          content: Door22,
+          openModal: true
         },
         door23: {
           title: "Luukku 23",
-          content: Door23
+          content: Door23,
+          openModal: true
         },
         door24: {
           title: "Luukku 24",
-          content: Door24
+          content: Door24,
+          openModal: true
         },
       },
       credits: {
@@ -212,11 +236,13 @@ export default {
       this.isLoaded = true
     },
     async openModal(id) {
-      this.currentTitle = this.doors[id].title;
-      this.currentContent = this.doors[id].content;
-      this.currentModalclass = null
-      //await new Promise(r => setTimeout(r, 1000));
-      this.showModal = true
+      if (this.doors[id].openModal) {
+        this.currentTitle = this.doors[id].title;
+        this.currentContent = this.doors[id].content;
+        this.currentModalclass = null
+        await new Promise(r => setTimeout(r, 2000));
+        this.showModal = true
+      }
     },
     closeModal() {
       this.showModal = false
@@ -249,7 +275,7 @@ export default {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  background-image: url("~@/assets/tausta2.jpg");
+  background-image: url("~@/assets/tausta.jpg");
   background-size: cover;
 }
 #loading {
@@ -270,7 +296,7 @@ export default {
   opacity: 0;
 }
 .loading-enter-active {
-  transition: opacity 0.1s;
+  transition: opacity 3s;
 }
 .loading-enter {
   opacity: 0;

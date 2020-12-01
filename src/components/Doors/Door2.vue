@@ -130,11 +130,11 @@ button {
   color: inherit;
   font: inherit;
   outline: inherit;
-  border: 1px solid;
+  border: 2px solid green;
   border-radius: 10px;
   padding: 0;
 }
 .active {
-  background-color: #adacac;
+  background-color: green;
 }
 </style>
