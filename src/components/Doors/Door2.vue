@@ -1,5 +1,6 @@
 <template>
   <div id="container">
+    <h2>Inkubion tupsujen heijastintupsut</h2>
     <a href="luukku2.pdf" target="_blank">avaa pdf</a>
     <nav>
       <button @click="setTab(1)" :class="{active: tab==1}">
@@ -10,11 +11,9 @@
       </button>
     </nav>
     <div v-if="tab == 1" id="tupsu">
-      <div>
         <h3>Tarviset</h3>
-        <p>heijastinkangasta, (jotain muuta venymätöntä kangasta), kangasliimaa, sakset, lankaa tai narua sekä
-          avainrenkaan tai yritysbrunssilta kerätyn sponsoriheijastimen kiinnitysosan</p>
-      </div>
+      <p>heijastinkangasta, (jotain muuta venymätöntä kangasta), kangasliimaa, sakset, lankaa tai narua sekä
+        avainrenkaan tai yritysbrunssilta kerätyn sponsoriheijastimen kiinnitysosan</p>
       <img src="@/assets/data/door2/Kuva1.jpg"/>
       <h3>Työvaiheet:</h3>
       <p>1. Leikkaa heijastinkankaasta ohuehkoja, noin 10 sentin paksuisia suikaleita.</p>
@@ -76,7 +75,6 @@
       <img src="@/assets/data/door2/kuva_tupsut5.jpg"/>
     </div>
   </div>
-  <!-- <embed src="luukku2.pdf"/> -->
 
 </template>
 
@@ -97,11 +95,23 @@ export default {
 </script>
 
 <style scoped>
-embed {
-  height: 100%;
-  width: 68%;
+@media only screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.5em;
+  }
+  p {
+    width: 70%;
+    font-size: 1.2em
+  }
 }
 #tupsu {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#porrotupsu {
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -112,6 +122,7 @@ embed {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
+  text-align: center;
 }
 #step4 {
   display: flex;
@@ -121,6 +132,7 @@ embed {
 img {
   padding: 5px;
   width: 45%;
+  max-width: 300px;
 }
 button {
   margin: 10px;
@@ -134,6 +146,7 @@ button {
   border-radius: 10px;
   padding: 0;
 }
+
 .active {
   background-color: green;
 }
