@@ -64,5 +64,6 @@ export default {
 }
 #content {
   height: 96%;
+  overflow: scroll;
 }
 </style>
