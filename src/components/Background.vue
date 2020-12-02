@@ -75,7 +75,7 @@ export default {
     async openDoor(event) {
       let d = event.target.id.slice(4)
       let current_date = new Date(Date.now())
-      if (process.env.VUE_APP_DEBUG === "true" || (current_date.getDate() == d && current_date.getMonth() + 1 === 12) ||
+      if (process.env.VUE_APP_DEBUG === "true" || (current_date.getDate() >= d && current_date.getMonth() + 1 === 12) ||
           current_date.getFullYear() > 2020) {
         let a = this.doors[event.target.id];
         this.$set(this.doors, event.target.id, true)
@@ -244,7 +244,7 @@ export default {
   margin: auto;
   height: 100vh;
   width: auto;
-  z-index: 1;
+  z-index: 2;
   clip-path: polygon(83% 6%, 89% 1%, 89% 12%, 83% 17%);
 }
 .hide {
