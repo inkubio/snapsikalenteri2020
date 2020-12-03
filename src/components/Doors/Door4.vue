@@ -39,6 +39,7 @@ name: "Door4"
 <style scoped>
 p {
   font-size: 1.2em;
+  margin: 10px 0;
 }
 #container {
   display: flex;
