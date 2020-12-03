@@ -1,5 +1,5 @@
 <template>
-  <p>Luukku 6</p>
+  <p>Hyvää toista adventtia!</p>
 </template>
 
 <script>
@@ -9,5 +9,11 @@ name: "Door6"
 </script>
 
 <style scoped>
-
+p {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
 </style>

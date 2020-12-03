@@ -90,7 +90,7 @@ export default {
         door6: {
           title: "Luukku 6",
           content: Door6,
-          openModal: false
+          openModal: true
         },
         door7: {
           title: "Luukku 7",
