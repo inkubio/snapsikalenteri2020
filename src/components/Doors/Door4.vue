@@ -1,8 +1,7 @@
 <template>
   <div id="container">
-    <p>4.12. NVOTEKJ</p>
-    <p>
-      Kulttuurintäyteistä joulunodotusta kanssakiltalaiset! Neljännen vuoden opiskelijatoiminnanedistämiskulttuurijaos
+    <h3>4. Vuosikurssin luukku</h3>
+    <p>4.12. NVOTEKJ: Kulttuurintäyteistä joulunodotusta kanssakiltalaiset! Neljännen vuoden opiskelijatoiminnanedistämiskulttuurijaos
       lähenee kunnioitettavaa puolen vuoden ikää ja halusimmekin koostaa teille hienoimmat hetkemme.
     </p>
     <p>
@@ -23,7 +22,11 @@
     <p>
       Mutta mitä NVOTEKJ tekee seuraavaksi? Jäämme seuraamaan tilannetta. Takaisin Pasilaan.
     </p>
-    <a href="https://www.youtube.com/watch?v=131mx6Dmx4Y&feature=youtu.be" target="_blank">LINKK VIDEOON</a>
+    <iframe id="video" src="https://www.youtube-nocookie.com/embed/131mx6Dmx4Y"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe>
   </div>
 </template>
 
@@ -42,5 +45,10 @@ p {
   flex-flow: column;
   height: 90%;
   justify-content: space-between;
+  align-items: center;
+}
+#video {
+  width: 95%;
+  height: 95%;
 }
 </style>
