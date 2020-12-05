@@ -1,5 +1,5 @@
 <template>
-  <p>Hyvää toista adventtia!</p>
+  <p>Hyvää itsenäisyyspäivää ja toista adventtia!</p>
 </template>
 
 <script>
