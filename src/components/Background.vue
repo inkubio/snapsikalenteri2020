@@ -101,7 +101,6 @@ export default {
       this.$emit('credits')
     },
     reset() {
-      console.log("TEST")
       let newDoors = {}
       for (const key in this.doors.keys) {
         newDoors[key] = false
@@ -111,7 +110,6 @@ export default {
   },
   watch: {
     doors: function (newDoors) {
-      console.log("test")
       localStorage.setItem('doors', JSON.stringify(newDoors))
     },
     deep: true

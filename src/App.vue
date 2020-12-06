@@ -100,12 +100,15 @@ export default {
         door8: {
           title: "Luukku 8",
           content: Door8,
-          openModal: true
+          openModal: true,
         },
         door9: {
           title: "Luukku 9",
           content: Door9,
-          openModal: true
+          openModal: true,
+          classObject: {
+            backgroundColor: "#FF0000"
+          }
         },
         door10: {
           title: "Luukku 10",
@@ -239,7 +242,7 @@ export default {
       if (this.doors[id].openModal) {
         this.currentTitle = this.doors[id].title;
         this.currentContent = this.doors[id].content;
-        this.currentModalclass = null
+        this.currentModalclass = this.doors[id].classObject;
         //await new Promise(r => setTimeout(r, 200));
         this.showModal = true
       }

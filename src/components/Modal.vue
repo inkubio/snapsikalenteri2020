@@ -39,7 +39,6 @@ export default {
 <style scoped>
 #modal {
   position: absolute;
-  background-color: white;
   box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.3);;
   z-index: 4;
 }
@@ -50,6 +49,7 @@ export default {
   bottom: 5%;
   max-width: 90%;
   max-height: 90%;
+  background-color: white;
 }
 #modal-container {
   padding: 1em;
