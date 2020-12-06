@@ -62,7 +62,6 @@
           easily!
         </p>
       </div>
-
       <div>
         <h5>3. Luumumutakakku</h5>
         <div>
@@ -258,7 +257,7 @@ h3 {
 #info {
   display: flex;
   flex-flow: column;
-  align-items: flex-start;
+  align-items: center;
   color: black;
 }
 #info > div > img {
@@ -279,7 +278,7 @@ h5 {
 }
 #torttu8 > div > img {
   max-height: 300px;
-  max-width: 85%;
+  max-width: 95%;
 }
 
 </style>
