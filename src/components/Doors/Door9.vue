@@ -245,6 +245,7 @@ h3 {
 #torttugrid > div {
   background-color: red;
   font-weight: bold;
+  word-wrap: break-word;
   width: 100%;
   height: 100%;
 }
