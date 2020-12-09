@@ -38,6 +38,9 @@ name: "Door11"
 </script>
 
 <style scoped>
+h3 {
+  font-size: 1.4em;
+}
 #container {
   width: 100%;
   height: 100%;
