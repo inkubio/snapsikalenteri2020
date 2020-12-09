@@ -128,7 +128,7 @@ export default {
         door13: {
           title: "Luukku 13",
           content: Door13,
-          openModal: false
+          openModal: true
         },
         door14: {
           title: "Luukku 14",
