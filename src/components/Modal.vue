@@ -64,6 +64,9 @@ export default {
 }
 #content {
   height: 96%;
-  overflow: scroll;
+  overflow-y: scroll;
+}
+#content::-webkit-scrollbar {
+  display: none;
 }
 </style>
