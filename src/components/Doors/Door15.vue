@@ -1,6 +1,6 @@
 <template>
   <div id="container">
-    <h3>Last Christmas Nokkahuiluversio</h3>
+    <h3>LAH!st ChirstmAH!s</h3>
     <iframe
         src="https://www.youtube-nocookie.com/embed/Wr1HySeEIe4"
         frameborder="0"
