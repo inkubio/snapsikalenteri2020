@@ -1,7 +1,7 @@
 <template>
   <div id="container">
     <h3>Kuinka paljon voi syödä piparitaikinaa, ennen kuin tulee paha olo?</h3>
-    <h4>Abstract</h4>
+    <h4 id="abstract">Abstract</h4>
     <p>Testasimme, kuinka paljon yhtäjaksoiseti pitää syödä piparitaikinaa ennenkuin tulee paha olo.
       Ensiksi määrittelimme pahalle ololle numeroasteikon. Koehenkilöinä toimivat Antti Huttunen ja Susan Rämä.
     </p>
@@ -165,6 +165,9 @@ ol {
 .graph {
   width: 100%;
   max-width: 550px;
+}
+#abstract {
+  margin-top: 1em;
 }
 
 </style>
