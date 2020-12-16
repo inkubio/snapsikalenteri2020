@@ -7,6 +7,26 @@
     </p>
     <div id="poroscopes">
       <div class="poroscope">
+        <img src="@/assets/data/door19/11.png"/>
+        <h4>Kipinä 23.11.-21.12.</h4>
+        <p>
+          Pääset vihdoinkin koti-kotiin ja tiedät, että voit unohtaa kaikki koulukiireet. Voit vetää päällesi kaikista
+          rumimman jouluvillapaitasi, leipoa ihania joululeivonnaisia ja koristella talo joulukuntoon.
+          Kyynisestä väsyneestä teekkarista kuoriutuu suorastaan joulun henkilö (joulun hengettären neutraali muoto).
+          Tuot näin iloa ja onnea koko perheellesi.
+        </p>
+      </div>
+      <div class="poroscope">
+        <img src="@/assets/data/door19/12.png"/>
+        <h4>Petteri 22.12.- 19.1.</h4>
+        <p>
+          Olet ollut tänä vuonna erittäin kiltti ja vanhem….joulupukkikin on huomannut tämän.
+          Saatkin lahjaksi omistusasunnon. Ainoa haittapuoli on, että asunto sijaitsee Enontekiöllä, etkä ole
+          valmis muuttamaan sinne. Kuitenkin suunnittelet kaveriesi kanssa Lapin matkan uuteen omistusasuntoosi ja
+          päätät vuokrata asunnon matkan jälkeen.
+        </p>
+      </div>
+      <div class="poroscope">
         <img src="@/assets/data/door19/1.png"/>
         <h4>Poku  20.1.-19.2.</h4>
         <p>
@@ -81,7 +101,7 @@
       </div>
       <div class="poroscope">
         <img src="@/assets/data/door19/8.png"/>
-        <h4>Täpy 24.8.-23.9.</h4>
+        <h4>Täpy 24.8.-22.9.</h4>
         <p>
           Tänä jouluna on vihdoin sinun vuorosi loistaa! Nimittäin murskaat vanhempasi perheesi perinteisessä
           jokavuotisessa kellotuskilpailussa elämäsi ensimmäisen kerran! Tämä on se hetki jota varten olet treenannut
@@ -107,26 +127,6 @@
           jaloissasi ja et saa mitään aikaiseksi, kun ajattelet vain häntä. Unohdat niin joululahjojen ostamisen kuin
           tentteihin valmistautumisen. Feidaat sukujoulun viime hetkellä, jotta voisit viettää myös joulunpyhät hänen
           seurassaan.
-        </p>
-      </div>
-      <div class="poroscope">
-        <img src="@/assets/data/door19/11.png"/>
-        <h4>Kipinä 23.11.-21.12.</h4>
-        <p>
-          Pääset vihdoinkin koti-kotiin ja tiedät, että voit unohtaa kaikki koulukiireet. Voit vetää päällesi kaikista
-          rumimman jouluvillapaitasi, leipoa ihania joululeivonnaisia ja koristella talo joulukuntoon.
-          Kyynisestä väsyneestä teekkarista kuoriutuu suorastaan joulun henkilö (joulun hengettären neutraali muoto).
-          Tuot näin iloa ja onnea koko perheellesi.
-        </p>
-      </div>
-      <div class="poroscope">
-        <img src="@/assets/data/door19/12.png"/>
-        <h4>Petteri 22.12.- 19.1.</h4>
-        <p>
-          Olet ollut tänä vuonna erittäin kiltti ja vanhem….joulupukkikin on huomannut tämän.
-          Saatkin lahjaksi omistusasunnon. Ainoa haittapuoli on, että asunto sijaitsee Enontekiöllä, etkä ole
-          valmis muuttamaan sinne. Kuitenkin suunnittelet kaveriesi kanssa Lapin matkan uuteen omistusasuntoosi ja
-          päätät vuokrata asunnon matkan jälkeen.
         </p>
       </div>
     </div>
@@ -157,7 +157,7 @@ p {
   flex-wrap: wrap;
 }
 .poroscope {
-  margin: 1em 0;
+  margin: 1em;
   width: 100%;
   max-width: 600px;
 }
