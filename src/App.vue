@@ -163,7 +163,7 @@ export default {
         door20: {
           title: "Luukku 20",
           content: Door20,
-          openModal: false
+          openModal: true
         },
         door21: {
           title: "Luukku 21",
