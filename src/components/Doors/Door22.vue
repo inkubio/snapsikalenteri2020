@@ -1,6 +1,6 @@
 <template>
   <div id="container">
-    <h3>Laita vaik S'napsi esittää: Tonttu</h3>
+    <h3>S'napsi esittää: Tonttu</h3>
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rK2PS9wvIbc" frameborder="0"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
