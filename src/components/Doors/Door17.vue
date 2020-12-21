@@ -1,6 +1,5 @@
 <template>
   <div id="container">
-    <h3>Pipariohje</h3>
     <h4>Kuinka leipoa tarpeeksi pipareita</h4>
     <p>
       On 17. joulukuuta. Kaikki itsenäisyyspäiväviikonloppuna leipomasi piparit on jo loppuneet, sillä et leiponut
