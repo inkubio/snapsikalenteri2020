@@ -28,4 +28,7 @@ p {
   width: 100%;
   max-width: 600px;
 }
+img {
+  max-width: 100%;
+}
 </style>
