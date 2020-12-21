@@ -5,12 +5,14 @@
       Suomen Turku julistaa perinteisen joulurauhan huomenna jouluaattona tyhjälle Suurtorille. Oletko koskaan
       ajatellut, että mitä jos julistuksen sanat menisivät vaikka sekaisin?
     </p>
+    <div class="divider"/>
     <h4>3 in 1 joulurauhan julistus aakkosjärjestyksessä</h4>
     <ul>
       <li>Järjestä takaisin alkuperäiseen järjestykseen</li>
       <li>Lisää sopivat välimerkit ja luo uudenlainen tarina</li>
       <li>Käytä bingona seuratessasi joulurauhanjulistusta kotisohvalta</li>
     </ul>
+    <div class="divider"/>
     <p>
       armorikas asetukset asiaankuuluvalla asianhaarain asukkaille erikseen hartaudella Herramme hiljaisesti huomenna
       häiritsee ja ja ja ja ja ja joka jollakin jonka jos joulujuhlaa joulujuhlaa joulurauha juhlaa julistetaan Jumala
@@ -51,5 +53,13 @@ ul {
 p {
   font-size: 1.2em;
   margin: 1em 0;
+}
+.divider {
+  height: 2px;
+  border-radius: 1px;
+  width: 65%;
+  max-width: 600px;
+  background-color: #D7D7D7;
+  margin: 1em auto;
 }
 </style>
